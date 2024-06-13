@@ -27,12 +27,18 @@ A Juce/C++ VST3 written to create an OverDrive distortion effect.
 
 # THEORY OF OPERATION<br />
 OVERDRIVE
-An overdrive effect is designed to give a guitar or other instrument a little extra boost/distortion.
+An overdrive(OD) effect is designed to give a guitar or other instrument a little extra boost/distortion.
 It is used in front of an amplifer or amp simulator when a little more drive is needed.
 
-This overdrive operates close to a famous OD called the Nobles OD. The Nobles has a Low/High filter section that lets
-the user form a section of frequency to boost. Many notable ODs boost 700 Hz. This OD takes that 700 Hz concept and spreads
-it out over more frequencies.
+Most ODs and distortion circuits send the guitar signal into a bandpass filter based around 700 Hz. This does two things:
+* Reduces the bass before gain, which tends to get muddy and woofy sounding.
+* Reduces some highs to cut down on the raspy noise that comes from distortion.
+
+After the signal is filtered it is run into some form of distorting section. 
+
+This OD takes that 700 Hz concept and spreads it out over more frequencies. By having a both a LOW and HIGH filter, we can get very close
+to a typical 700 Hz bandpass and we can have more control to make it sound like something else. This added control can remove some of the
+nasally sound created by typical bandpass filters.
 
 In addition to a normal OD, this VST adds some extra distorting stages.
 * Enhanced Low - Pushes 450 Hz after all of ther gain stages.
@@ -41,8 +47,10 @@ In addition to a normal OD, this VST adds some extra distorting stages.
 Since it is assumed this VST will be used in front of other amp sims, a noise gate was added to reduce the number of VST stages required.
 
 There is also a MIX knob that lets the user mix in some cleaner sound to the distorted sound. Just another thing to give the user as many
-options as possible to create the sound they want.  
+options as possible to create the sound they want. Since that is the whole point of this demo, create something that is NOT the norm. You 
+may be the next best effect coder so get started.
 
+# JUCE RELATED STUFF<br />
 BACKGROUND IMAGE  
 This VST uses a custem made background image. The file is included in the ZIP. Any images must be added to the PROJUCER project file so
 they can be embedded into the C++ project. In the Editor PAINT function, the background can be skipped and a normal UI drawing section used.
