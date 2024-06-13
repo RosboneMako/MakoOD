@@ -23,7 +23,7 @@ SUMMARY
 ------------------------------------------------------------------
 A Juce/C++ VST3 written to create an OverDrive distortion effect. 
 
-![Demo Image](docs/assets/makochorusdemo01.png)
+![Demo Image](docs/assets/makooddemo01.jpg)
 
 # THEORY OF OPERATION<br />
 OVERDRIVE
