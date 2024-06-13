@@ -40,6 +40,9 @@ In addition to a normal OD, this VST adds some extra distorting stages.
 
 Since it is assumed this VST will be used in front of other amp sims, a noise gate was added to reduce the number of VST stages required.
 
+There is also a MIX knob that lets the user mix in some cleaner sound to the distorted sound. Just another thing to give the user as many
+options as possible to create the sound they want.  
+
 BACKGROUND IMAGE  
 This VST uses a custem made background image. The file is included in the ZIP. Any images must be added to the PROJUCER project file so
 they can be embedded into the C++ project. In the Editor PAINT function, the background can be skipped and a normal UI drawing section used.
