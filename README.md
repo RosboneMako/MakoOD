@@ -52,7 +52,7 @@ may be the next best effect coder so get started.
 
 # JUCE RELATED STUFF<br />
 BACKGROUND IMAGE  
-This VST uses a custem made background image. The file is included in the ZIP. Any images must be added to the PROJUCER project file so
+This VST uses a custom made background image. The file is included in the ZIP. Any images must be added to the PROJUCER project file so
 they can be embedded into the C++ project. In the Editor PAINT function, the background can be skipped and a normal UI drawing section used.
 
 CUSTOM SLIDERS  
