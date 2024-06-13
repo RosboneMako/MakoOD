@@ -5,7 +5,7 @@
 * Written in Visual C++ 2022.
 * Written for new programmers, not complicated.
 * Version: 1.00
-* Posted: June 11, 2024
+* Posted: June 13, 2024
 
 VERSION
 ------------------------------------------------------------------
@@ -27,8 +27,27 @@ A Juce/C++ VST3 written to create an OverDrive distortion effect.
 
 # THEORY OF OPERATION<br />
 OVERDRIVE
-The overdrive effect is designed to give a guitar or other instrument a little extra boost/distortion.
+An overdrive effect is designed to give a guitar or other instrument a little extra boost/distortion.
 It is used in front of an amplifer or amp simulator when a little more drive is needed.
+
+This overdrive operates close to a famous OD called the Nobles OD. The Nobles has a Low/High filter section that lets
+the user form a section of frequency to boost. Many notable ODs boost 700 Hz. This OD takes that 700 Hz concept and spreads
+it out over more frequencies.
+
+In addition to a normal OD, this VST adds some extra distorting stages.
+* Enhanced Low - Pushes 450 Hz after all of ther gain stages.
+* Enhanced High - Pushes 1350 Hz before gain to retain crispness.
+
+Since it is assumed this VST will be used in front of other amp sims, a noise gate was added to reduce the number of VST stages required.
+
+BACKGROUND IMAGE  
+This VST uses a custem made background image. The file is included in the ZIP. Any images must be added to the PROJUCER project file so
+they can be embedded into the C++ project. In the Editor PAINT function, the background can be skipped and a normal UI drawing section used.
+
+CUSTOM SLIDERS  
+This VST overrides the standard JUCE slider control drawing function. This allows us to make a psuedo realistic knob in place of a slider.
+This is accomplished by creating our own LOOKANDFEEL class based off the JUCE class. We then override the normal function.
+
 
 
 
