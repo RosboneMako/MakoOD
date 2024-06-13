@@ -1,4 +1,4 @@
-# MakoOD
+# Mako OverDrive
 * A demo JUCE VST guitar OverDrive pedal.
 * Demo JUCE program.
 * Tested on Windows only.
