@@ -41,8 +41,8 @@ to a typical 700 Hz bandpass and we can have more control to make it sound like 
 nasally sound created by typical bandpass filters.
 
 In addition to a normal OD, this VST adds some extra distorting stages.
-* Enhanced Low - Pushes 450 Hz after all of ther gain stages.
-* Enhanced High - Pushes 1350 Hz before gain to retain crispness.
+* Enhanced Low - Pushes 450 Hz after all of the other gain stages.
+* Enhanced High - Pushes 1350 Hz before gain to boost crispness.
 
 Since it is assumed this VST will be used in front of other amp sims, a noise gate was added to reduce the number of VST stages required.
 
