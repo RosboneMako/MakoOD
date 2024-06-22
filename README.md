@@ -1,6 +1,6 @@
 # Mako OverDrive
 * A demo JUCE VST guitar OverDrive pedal.
-* Demo JUCE program.
+* Demo JUCE program. Sample code.
 * Tested on Windows only.
 * Written in Visual C++ 2022.
 * Written for new programmers, not complicated.
